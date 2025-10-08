@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+.container{
+    /* background-color: aqua; */
+margin: auto;
+width: 50vw;
+height: 50vh;
+}
+
+#panel,.flip{
+    
+    cursor: pointer;
+    background-color: #04AA6D;
+    text-align: center;
+    font-size: 2rem;
+    border:1px solid #a6d8a8;
+    padding: 10px;
+}
+
+
+#panel{
+    display: none;
+    cursor: auto;
+}
+
+</style>
+<body>
+
+    <div class="container">
+        <p class="flip" onclick="MyFunction()">Click Me To Show More Data</p>
+        <div id="panel">
+            <p>Ye Mene javascript ke use se kiya h</p>
+            <p>phlu mujhe javascript se bahut dar lgta tha but bhai bahut easy h yar</p>
+        </div>
+    </div>
+
+    <!--  -->
+    <script>
+      function MyFunction(){
+        let x = document.getElementById("panel");
+            if(x.style.display === "none"){
+              x.style.display = "block";
+            }
+            else{
+                x.style.display="none";
+            }
+      }
+    </script>
+</body>
+</html>

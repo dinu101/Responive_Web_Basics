@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    margin:0;
+    width: 100vw;
+    height: 100vh;
+    /* background-color: rgb(122, 105, 201); */
+    display: flex;
+    /* flex-direction: column; */
+    border: 2px solid black dashed;
+    /* gap: 0.1rem; */
+}
+.container .left{
+     font-size: 3rem;
+    margin: 1rem auto;
+    width: 40vw;
+    height: 40vh;
+    /* background-color: blue; */
+    padding:4rem;
+    border: 2px solid black;
+   
+
+}
+ul li{
+list-style-type: circle; 
+  
+
+}
+.container .right{
+    font-size: 3rem;
+    margin: 1rem auto;
+    width: 40vw;
+    height: 40vh;
+    /* background-color:rgb(221, 42, 42); */
+    border: 2px solid black;
+    padding: 4rem;
+}
+ol{
+    list-style-type:upper-roman;
+}
+</style>
+<body>
+    <div class="container">
+<!--  -->
+        <div class="left">
+        <ul>
+            <li>Tea</li>
+            <li>Coffee</li>
+            <li>Chai</li>
+        </ul>
+        </div>
+<!--  -->
+        <div class="right">
+         <ol>
+            <li>Tea</li>
+            <li>Coffee</li>
+            <li>Chai</li>
+         </ol>
+        </div>
+    </div>
+</body>
+</html>
