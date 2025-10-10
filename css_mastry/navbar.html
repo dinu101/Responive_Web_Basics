@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+ul{
+    /* border: 2px solid red; */
+    width: 10rem;
+    list-style-type: none;
+    height: 100vh;
+    position: fixed;
+    overflow: auto;
+}
+ul li{
+    /* border-bottom: 2px solid red; */
+}
+ul li a{
+    display: block;
+
+    font-size: 2rem;
+    padding: 8px 16px;
+    text-align: center;
+    display: block;
+    /* border-bottom: 2px sold black; */
+    text-decoration: none;
+    
+}
+ul li a:hover{
+    background-color: #555555;
+    color: white;
+}
+div{
+    margin-left:10rem;
+    padding: 1px 16px;
+}
+ul li a.active{
+    background-color: #04AA6D;
+    color: white;
+}
+ul li a:hover:not(.active){
+      background-color: #555555;
+    color: white;
+}
+</style>
+<body>
+    <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Store</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam vitae voluptatum quod aut doloribus sequi non dolores perferendis natus possimus, consequuntur quibusdam aperiam temporibus tenetur cumque voluptatibus quas. Corrupti enim laudantium autem ut, obcaecati molestiae harum ducimus quod cum ab dolores, iste doloremque expedita asperiores, at cupiditate dolor consequuntur excepturi. Illo dolor voluptatibus, ea nobis impedit in omnis minima, cum magnam natus sit blanditiis asperiores eveniet quam ab similique illum reiciendis odio! Excepturi quam laborum aut mollitia ut quisquam repudiandae nam, nesciunt pariatur ipsum dolor necessitatibus facilis asperiores corporis distinctio unde ad quaerat incidunt animi at tempore. Corporis, soluta perspiciatis.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam vitae voluptatum quod aut doloribus sequi non dolores perferendis natus possimus, consequuntur quibusdam aperiam temporibus tenetur cumque voluptatibus quas. Corrupti enim laudantium autem ut, obcaecati molestiae harum ducimus quod cum ab dolores, iste doloremque expedita asperiores, at cupiditate dolor consequuntur excepturi. Illo dolor voluptatibus, ea nobis impedit in omnis minima, cum magnam natus sit blanditiis asperiores eveniet quam ab similique illum reiciendis odio! Excepturi quam laborum aut mollitia ut quisquam repudiandae nam, nesciunt pariatur ipsum dolor necessitatibus facilis asperiores corporis distinctio unde ad quaerat incidunt animi at tempore. Corporis, soluta perspiciatis.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam vitae voluptatum quod aut doloribus sequi non dolores perferendis natus possimus, consequuntur quibusdam aperiam temporibus tenetur cumque voluptatibus quas. Corrupti enim laudantium autem ut, obcaecati molestiae harum ducimus quod cum ab dolores, iste doloremque expedita asperiores, at cupiditate dolor consequuntur excepturi. Illo dolor voluptatibus, ea nobis impedit in omnis minima, cum magnam natus sit blanditiis asperiores eveniet quam ab similique illum reiciendis odio! Excepturi quam laborum aut mollitia ut quisquam repudiandae nam, nesciunt pariatur ipsum dolor necessitatibus facilis asperiores corporis distinctio unde ad quaerat incidunt animi at tempore. Corporis, soluta perspiciatis.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam vitae voluptatum quod aut doloribus sequi non dolores perferendis natus possimus, consequuntur quibusdam aperiam temporibus tenetur cumque voluptatibus quas. Corrupti enim laudantium autem ut, obcaecati molestiae harum ducimus quod cum ab dolores, iste doloremque expedita asperiores, at cupiditate dolor consequuntur excepturi. Illo dolor voluptatibus, ea nobis impedit in omnis minima, cum magnam natus sit blanditiis asperiores eveniet quam ab similique illum reiciendis odio! Excepturi quam laborum aut mollitia ut quisquam repudiandae nam, nesciunt pariatur ipsum dolor necessitatibus facilis asperiores corporis distinctio unde ad quaerat incidunt animi at tempore. Corporis, soluta perspiciatis.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam vitae voluptatum quod aut doloribus sequi non dolores perferendis natus possimus, consequuntur quibusdam aperiam temporibus tenetur cumque voluptatibus quas. Corrupti enim laudantium autem ut, obcaecati molestiae harum ducimus quod cum ab dolores, iste doloremque expedita asperiores, at cupiditate dolor consequuntur excepturi. Illo dolor voluptatibus, ea nobis impedit in omnis minima, cum magnam natus sit blanditiis asperiores eveniet quam ab similique illum reiciendis odio! Excepturi quam laborum aut mollitia ut quisquam repudiandae nam, nesciunt pariatur ipsum dolor necessitatibus facilis asperiores corporis distinctio unde ad quaerat incidunt animi at tempore. Corporis, soluta perspiciatis.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam vitae voluptatum quod aut doloribus sequi non dolores perferendis natus possimus, consequuntur quibusdam aperiam temporibus tenetur cumque voluptatibus quas. Corrupti enim laudantium autem ut, obcaecati molestiae harum ducimus quod cum ab dolores, iste doloremque expedita asperiores, at cupiditate dolor consequuntur excepturi. Illo dolor voluptatibus, ea nobis impedit in omnis minima, cum magnam natus sit blanditiis asperiores eveniet quam ab similique illum reiciendis odio! Excepturi quam laborum aut mollitia ut quisquam repudiandae nam, nesciunt pariatur ipsum dolor necessitatibus facilis asperiores corporis distinctio unde ad quaerat incidunt animi at tempore. Corporis, soluta perspiciatis.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam vitae voluptatum quod aut doloribus sequi non dolores perferendis natus possimus, consequuntur quibusdam aperiam temporibus tenetur cumque voluptatibus quas. Corrupti enim laudantium autem ut, obcaecati molestiae harum ducimus quod cum ab dolores, iste doloremque expedita asperiores, at cupiditate dolor consequuntur excepturi. Illo dolor voluptatibus, ea nobis impedit in omnis minima, cum magnam natus sit blanditiis asperiores eveniet quam ab similique illum reiciendis odio! Excepturi quam laborum aut mollitia ut quisquam repudiandae nam, nesciunt pariatur ipsum dolor necessitatibus facilis asperiores corporis distinctio unde ad quaerat incidunt animi at tempore. Corporis, soluta perspiciatis.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam vitae voluptatum quod aut doloribus sequi non dolores perferendis natus possimus, consequuntur quibusdam aperiam temporibus tenetur cumque voluptatibus quas. Corrupti enim laudantium autem ut, obcaecati molestiae harum ducimus quod cum ab dolores, iste doloremque expedita asperiores, at cupiditate dolor consequuntur excepturi. Illo dolor voluptatibus, ea nobis impedit in omnis minima, cum magnam natus sit blanditiis asperiores eveniet quam ab similique illum reiciendis odio! Excepturi quam laborum aut mollitia ut quisquam repudiandae nam, nesciunt pariatur ipsum dolor necessitatibus facilis asperiores corporis distinctio unde ad quaerat incidunt animi at tempore. Corporis, soluta perspiciatis.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam vitae voluptatum quod aut doloribus sequi non dolores perferendis natus possimus, consequuntur quibusdam aperiam temporibus tenetur cumque voluptatibus quas. Corrupti enim laudantium autem ut, obcaecati molestiae harum ducimus quod cum ab dolores, iste doloremque expedita asperiores, at cupiditate dolor consequuntur excepturi. Illo dolor voluptatibus, ea nobis impedit in omnis minima, cum magnam natus sit blanditiis asperiores eveniet quam ab similique illum reiciendis odio! Excepturi quam laborum aut mollitia ut quisquam repudiandae nam, nesciunt pariatur ipsum dolor necessitatibus facilis asperiores corporis distinctio unde ad quaerat incidunt animi at tempore. Corporis, soluta perspiciatis.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam vitae voluptatum quod aut doloribus sequi non dolores perferendis natus possimus, consequuntur quibusdam aperiam temporibus tenetur cumque voluptatibus quas. Corrupti enim laudantium autem ut, obcaecati molestiae harum ducimus quod cum ab dolores, iste doloremque expedita asperiores, at cupiditate dolor consequuntur excepturi. Illo dolor voluptatibus, ea nobis impedit in omnis minima, cum magnam natus sit blanditiis asperiores eveniet quam ab similique illum reiciendis odio! Excepturi quam laborum aut mollitia ut quisquam repudiandae nam, nesciunt pariatur ipsum dolor necessitatibus facilis asperiores corporis distinctio unde ad quaerat incidunt animi at tempore. Corporis, soluta perspiciatis.</p>
+    </div>
+</body>
+</html>
