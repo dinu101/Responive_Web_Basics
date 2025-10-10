@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+      
+        margin: 2rem auto;
+        background-color: antiquewhite;
+
+    }
+
+    .imgbox{
+        float: left;
+        width: 8rem;
+        margin:0.4rem;
+        padding: 0.4rem;
+        border: 2px solid black;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div class="container">
+
+        <div class="imgbox" id="imgbox1">
+            Box 1 <br>
+            <img src="https://png.pngtree.com/png-clipart/20240107/original/pngtree-prideful-poise-majestic-tiger-in-confidence-png-image_14046644.png" alt="" width="100%">
+            <button onclick="removeimg()">Remove</button>
+        </div>
+
+        <div class="imgbox" id="imgbox2">
+            Box 2 <br>
+            <img src="https://png.pngtree.com/png-clipart/20240107/original/pngtree-prideful-poise-majestic-tiger-in-confidence-png-image_14046644.png" alt="" width="100%">
+            <button onclick="hideimg()">Hide</button>
+        </div>
+
+        <div class="imgbox" id="imgbox3">
+            Box 3 <br>
+            <img src="https://png.pngtree.com/png-clipart/20240107/original/pngtree-prideful-poise-majestic-tiger-in-confidence-png-image_14046644.png" alt="" width="100%">
+            <button onclick="resetall()">Reset</button>
+        </div>
+
+    </div>
+    <script>
+      function removeimg(){
+        document.getElementById("imgbox1").style.display = "none";
+      }
+      function hideimg(){
+        document.getElementById("imgbox2").style.visibility = "hidden";
+      }
+      function resetall(){
+        document.getElementById("imgbox1").style.display = "block";
+        document.getElementById("imgbox2").style.visibility = "visible";
+      }
+    </script>
+</body>
+
+</html>
