@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Menu</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+        }
+
+        .con {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        /* Navbar */
+        ul {
+            background-color: #38444d;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            list-style: none;
+        }
+
+        ul li {
+            position: relative;
+        }
+
+        ul li a,
+        .dropbtn {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        li a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: #ff4d4d;
+        }
+
+        li.dropdown {
+            display: inline-block;
+        }
+
+        /* Dropdown menu */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #f9f9f9;
+            min-width: 180px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            border-radius: 6px;
+            overflow: hidden;
+            opacity: 0;
+            transform: translateY(10px);
+            transition: all 0.3s ease-in-out;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            display: block;
+            color: #333;
+            padding: 12px 16px;
+            text-decoration: none;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* Hover show with animation */
+        .dropdown:hover .dropdown-content {
+            display: block;
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Store</a>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </li>
+
+            <li><a href="#">Help</a></li>
+        </ul>
+    </div>
+</body>
+</html>
